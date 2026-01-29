@@ -1,75 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Men – Old Money | Zahraa Finds</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f3ef;
-      color: #111;
-    }
-    h1 {
-      text-align: center;
-      padding: 24px;
-      letter-spacing: 1.2px;
-    }
-    .look {
-      max-width: 600px;
-      margin: 40px auto;
-      background: #ffffff;
-      border-radius: 14px;
-      overflow: hidden;
-    }
-    .look img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .content {
-      padding: 18px;
-    }
-    .content h2 {
-      margin: 0 0 12px;
-      font-size: 18px;
-      font-weight: 600;
-    }
-    .content a {
-      display: block;
-      text-decoration: none;
-      color: #000;
-      margin: 6px 0;
-      font-size: 14px;
-    }
-    .content a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Men – Old Money | Zahraa Finds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f2ee;
+    color: #111;
+  }
+  h1 {
+    text-align: center;
+    padding: 24px 0;
+    letter-spacing: 1px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 0 16px;
+  }
+  .grid img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+  }
+  .grid img:hover {
+    transform: scale(1.03);
+  }
+  .details {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    display: none; /* hidden by default */
+    padding: 16px;
+  }
+  .details img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  .details h2 {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+    font-size: 14px;
+  }
+  .item a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #111;
+    padding: 4px 10px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+  }
+  .item a:hover {
+    background: #111;
+    color: #fff;
+  }
+</style>
 </head>
 <body>
 
 <h1>Men – Old Money</h1>
 
-<div class="look">
-  <img src="PASTE_IMAGE_URL_HERE">
-  <div class="content">
-    <h2>Old Money Look #1</h2>
-   <h2>Old Money Look #1</h2>
+<div class="grid">
+  <img src="PASTE_IMAGE1_URL_HERE" alt="Look 1" onclick="showDetails('1')">
+  <img src="PASTE_IMAGE2_URL_HERE" alt="Look 2" onclick="showDetails('2')">
+  <img src="PASTE_IMAGE3_URL_HERE" alt="Look 3" onclick="showDetails('3')">
+</div>
 
-<a href="AMAZON_SHIRT_LINK" target="_blank">Tailored Shirt (Amazon)</a>
-<a href="PREMIUM_SHIRT_LINK" target="_blank">Tailored Shirt (Premium)</a>
-
-<a href="AMAZON_PANTS_LINK" target="_blank">Pleated Trousers (Amazon)</a>
-<a href="PREMIUM_PANTS_LINK" target="_blank">Pleated Trousers (Premium)</a>
-
-<a href="AMAZON_SHOES_LINK" target="_blank">Leather Loafers (Amazon)</a>
-<a href="PREMIUM_SHOES_LINK" target="_blank">Leather Loafers (Premium)</a>
-
+<!-- DETAILS SECTIONS -->
+<div id="details-1" class="details">
+  <h2>Old Money Look #1</h2>
+  <img src="PASTE_IMAGE1_URL_HERE">
+  <div class="item">
+    <span>Shirt</span>
+    <span><a href="AMAZON_SHIRT_LINK" target="_blank">Amazon</a> <a href="PREMIUM_SHIRT_LINK" target="_blank">Premium</a></span>
+  </div>
+  <div class="item">
+    <span>Pants</span>
+    <span><a href="AMAZON_PANTS_LINK" target="_blank">Amazon</a> <a href="PREMIUM_PANTS_LINK" target="_blank">Premium</a></span>
+  </div>
+  <div class="item">
+    <span>Shoes</span>
+    <span><a href="AMAZON_SHOES_LINK" target="_blank">Amazon</a> <a href="PREMIUM_SHOES_LINK" target="_blank">Premium</a></span>
   </div>
 </div>
 
+<div id="details-2" class="details">
+  <h2>Old Money Look #2</h2>
+  <img src="PASTE_IMAGE2_URL_HERE">
+  <div class="item">
+    <span>Shirt</span>
+    <span><a href="AMAZON_SHIRT_LINK2" target="_blank">Amazon</a> <a href="PREMIUM_SHIRT_LINK2" target="_blank">Premium</a></span>
+  </div>
+  <div class="item">
+    <span>Pants</span>
+    <span><a href="AMAZON_PANTS_LINK2" target="_blank">Amazon</a> <a href="PREMIUM_PANTS_LINK2" target="_blank">Premium</a></span>
+  </div>
+  <div class="item">
+    <span>Shoes</span>
+    <span><a href="AMAZON_SHOES_LINK2" target="_blank">Amazon</a> <a href="PREMIUM_SHOES_LINK2" target="_blank">Premium</a></span>
+  </div>
+</div>
+
+<div id="details-3" class="details">
+  <h2>Old Money Look #3</h2>
+  <img src="PASTE_IMAGE3_URL_HERE">
+  <div class="item">
+    <span>Shirt</span>
+    <span><a href="AMAZON_SHIRT_LINK3" target="_blank">Amazon</a> <a href="PREMIUM_SHIRT_LINK3" target="_blank">Premium</a></span>
+  </div>
+  <div class="item">
+    <span>Pants</span>
+    <span><a href="AMAZON_PANTS_LINK3" target="_blank">Amazon</a> <a href="PREMIUM_PANTS_LINK3" target="_blank">Premium</a></span>
+  </div>
+  <div class="item">
+    <span>Shoes</span>
+    <span><a href="AMAZON_SHOES_LINK3" target="_blank">Amazon</a> <a href="PREMIUM_SHOES_LINK3" target="_blank">Premium</a></span>
+  </div>
+</div>
+
+<script>
+function showDetails(id) {
+  const all = document.querySelectorAll('.details');
+  all.forEach(d => d.style.display = 'none'); // hide all
+  document.getElementById('details-' + id).style.display = 'block'; // show selected
+  window.scrollTo({ top: document.getElementById('details-' + id).offsetTop - 20, behavior: 'smooth' });
+}
+</script>
+
 </body>
 </html>
+
 
