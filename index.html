@@ -14,42 +14,35 @@
       color: #111;
     }
 
-    /* HEADER */
+    /* HEADER: CENTERED LOGO + NAME + TAGLINE */
     header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 24px;
+      text-align: center;
+      padding: 24px 20px;
       border-bottom: 1px solid #eee;
-      flex-wrap: wrap;
     }
 
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
+    header img {
+      height: 300px; /* Logo height */
+      display: block;
+      margin: 0 auto;
     }
 
-    .header-left img {
-      height: 80px;
-    }
-
-    .header-left h1 {
-      margin: 0;
-      font-size: 20px;
+    header h1 {
+      margin: 16px 0 8px;
+      font-size: 28px;
       font-weight: bold;
     }
 
-    nav {
+    header nav {
       display: flex;
+      justify-content: center;
       gap: 12px;
-      align-items: center;
       font-weight: 500;
       color: grey;
+      flex-wrap: wrap;
     }
 
-    nav a {
+    header nav a {
       text-decoration: none;
       color: grey;
     }
@@ -78,8 +71,7 @@
 
     .card img {
       width: 100%;
-      height: auto; /* shows full image, no cropping */
-      object-fit: cover;
+      height: auto; /* Full image */
       display: block;
     }
 
@@ -92,19 +84,13 @@
 
     /* MOBILE */
     @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-        gap: 12px;
+      header img {
+        height: 200px;
       }
-      .header-left h1 {
-        font-size: 18px;
+      header h1 {
+        font-size: 22px;
       }
-      .header-left img {
-        height: 60px;
-      }
-      nav {
-        justify-content: center;
+      header nav {
         gap: 8px;
         font-size: 14px;
       }
@@ -120,12 +106,10 @@
 
   <!-- HEADER -->
   <header>
-    <div class="header-left">
-      <a href="index.html">
-        <img src="ChatGPT Image Jan 29, 2026, 08_31_01 PM.png" alt="Logo">
-      </a>
-      <h1>Zahraa Fashion Finds Global</h1>
-    </div>
+    <a href="index.html">
+      <img src="ChatGPT Image Jan 29, 2026, 08_31_01 PM.png" alt="Zahraa Fashion Finds Global Logo">
+    </a>
+    <h1>Zahraa Fashion Finds Global</h1>
 
     <nav>
       <a href="aesthetics.html">Discover Aesthetics.</a>
@@ -144,6 +128,11 @@
       <img src="https://i.pinimg.com/1200x/19/5f/96/195f96b0a15351ff01963cf77ec5b434.jpg" alt="Women">
       <h3>Women</h3>
     </a>
+  </section>
+
+</body>
+</html>
+
   </section>
 
 </body>
