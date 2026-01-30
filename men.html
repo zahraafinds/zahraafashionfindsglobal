@@ -1,122 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Men - Zahraa Fashion Finds Global</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Men - Zahraa Fashion Finds Global</title>
 
   <style>
-   body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #fafafa;
-  color: #111;
-}
+    /* BODY */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fafafa;
+      color: #111;
+    }
 
-.site-header {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
+    /* HEADER: CENTERED LOGO + NAME + TAGLINE */
+    header {
+      text-align: center;
+      padding: 24px 20px;
+      border-bottom: 1px solid #eee;
+    }
 
-.site-header-left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex: 1;
-}
+    header img {
+      height: 300px; /* Logo height */
+      display: block;
+      margin: 0 auto;
+    }
 
-.site-header nav {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  flex: 1;
-}
+    header h1 {
+      margin: 16px 0 8px;
+      font-size: 28px;
+      font-weight: bold;
+    }
 
-.site-header a {
-  text-decoration: none;
-  color: grey;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      font-weight: 500;
+      color: grey;
+      flex-wrap: wrap;
+    }
 
-.page-title {
-  text-align: center;
-  padding: 40px 20px;
-}
+    header nav a {
+      text-decoration: none;
+      color: grey;
+    }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-  padding: 40px;
-}
+    /* PAGE HEADER */
+    .page-header {
+      text-align: center;
+      padding: 40px 20px;
+    }
 
+    /* GRID CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      padding: 40px;
+    }
+
+    .card {
+      display: block;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto; /* Full image */
+      display: block;
+    }
+
+    .card h3 {
+      text-align: center;
+      padding: 12px;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      header img {
+        height: 200px;
+      }
+      header h1 {
+        font-size: 22px;
+      }
+      header nav {
+        gap: 8px;
+        font-size: 14px;
+      }
+      .grid {
+        padding: 20px;
+        gap: 16px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <header class="site-header">
 
-  <div class="brand">
-    <a href="index.html">
-      <img src="ChatGPT Image Jan 29, 2026, 08_31_01 PM.png" alt="Logo">
-    </a>
-
-    <h1>Zahraa Fashion Finds Global</h1>
-  </div>
-
-  <nav class="main-nav">
-    <a href="aesthetics.html">Discover Aesthetics</a>
-    <a href="shop-the-look.html">Shop the Look</a>
-  </nav>
-
-</header>
-
-
-<!-- SITE HEADER -->
-<header class="top-header">
-
-  <div class="logo-group">
+  <!-- HEADER -->
+  <header>
     <a href="index.html">
       <img src="ChatGPT Image Jan 29, 2026, 08_31_01 PM.png" alt="Logo">
     </a>
     <h1>Zahraa Fashion Finds Global</h1>
-  </div>
 
-  <nav>
-    <a href="aesthetics.html">Discover Aesthetics</a>
-    <a href="shop-the-look.html">Shop the Look</a>
-  </nav>
+    <nav>
+      <a href="aesthetics.html">Discover Aesthetics.</a>
+      <a href="shop-the-look.html">Shop the Look.</a>
+    </nav>
+  </header>
 
-  <div style="flex:1;"></div>
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <h1>Men</h1>
+    <p>Choose your aesthetic</p>
+  </section>
 
-</header>
+  <!-- GRID -->
+  <section class="grid">
+    <a class="card" href="men-old-money.html">
+      <img src="https://i.pinimg.com/736x/85/78/fa/8578fa990aaa2aa1868dd7aae79bab7d.jpg" alt="Old Money">
+      <h3>Old Money</h3>
+    </a>
 
-<!-- PAGE TITLE -->
-<section class="page-header">
-  <h1>Men</h1>
-  <p>Choose your aesthetic</p>
-</section>
+    <a class="card" href="men-clean.html">
+      <img src="https://i.pinimg.com/736x/15/03/31/1503313ff7961b9feb0520a114042a63.jpg" alt="Clean Aesthetic">
+      <h3>Clean Aesthetic</h3>
+    </a>
 
-<!-- GRID -->
-<section class="grid">
+    <a class="card" href="men-streetwear.html">
+      <img src="https://i.pinimg.com/736x/a4/b1/6a/a4b16a296bf338426ef067a944690372.jpg" alt="Streetwear">
+      <h3>Streetwear</h3>
+    </a>
+  </section>
 
-  <a class="card" href="men-old-money.html">
-    <img src="https://i.pinimg.com/736x/85/78/fa/8578fa990aaa2aa1868dd7aae79bab7d.jpg">
-    <h3>Old Money</h3>
-  </a>
+</body>
+</html>
 
-  <a class="card" href="men-clean.html">
-    <img src="https://i.pinimg.com/1200x/15/03/31/1503313ff7961b9feb0520a114042a63.jpg">
-    <h3>Clean Aesthetic</h3>
-  </a>
-
-  <a class="card" href="men-streetwear.html">
-    <img src="https://i.pinimg.com/736x/a4/b1/6a/a4b16a296bf338426ef067a944690372.jpg">
-    <h3>Streetwear</h3>
-  </a>
 
 </section>
 
