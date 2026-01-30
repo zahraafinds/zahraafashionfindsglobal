@@ -8,155 +8,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
   <style>
-    body {
+   body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: #fafafa;
+  color: #111;
 }
 
-/* HEADER */
 .site-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px 16px;
-  gap: 12px;
+  padding: 20px;
 }
 
-/* LEFT: LOGO + BRAND */
-.brand {
+.site-header-left {
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-
-.brand img {
-  height: 80px; /* mobile-friendly */
-}
-
-.brand h1 {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0;
-}
-
-/* CENTER NAV */
-.main-nav {
-  display: flex;
   gap: 20px;
+  flex: 1;
 }
 
-.main-nav a {
+.site-header nav {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex: 1;
+}
+
+.site-header a {
   text-decoration: none;
-  color: #666;
-  font-size: 14px;
-  font-weight: 500;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 🔹 MOBILE RULES */
-@media (max-width: 768px) {
-  .site-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .main-nav {
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .brand img {
-    height: 70px;
-  }
+.page-title {
+  text-align: center;
+  padding: 40px 20px;
 }
 
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #fafafa;
-      color: #111;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 40px;
+}
 
-    /* TOP HEADER BAR */
-    .top-header {
-      display: flex;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .logo-area {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex: 1;
-    }
-
-    .logo-area img {
-      height: 150px;
-    }
-
-    .logo-area h1 {
-      font-size: 28px;
-      font-weight: 700;
-      margin: 0;
-    }
-
-    nav {
-      display: flex;
-      gap: 40px;
-      justify-content: center;
-      flex: 1;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: grey;
-      font-weight: 500;
-    }
-
-    .spacer {
-      flex: 1;
-    }
-
-    /* PAGE HEADER */
-    .page-header {
-      text-align: center;
-      padding: 40px 20px 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-      padding: 40px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-      transition: transform 0.3s ease;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 320px;
-      object-fit: contain;
-    }
-
-    .card h3 {
-      text-align: center;
-      padding: 18px;
-      font-size: 1.1rem;
-      font-weight: 500;
-    }
   </style>
 </head>
 
