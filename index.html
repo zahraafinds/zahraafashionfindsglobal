@@ -1,156 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Zahraa Fashion Finds Global</title>
-
   <meta charset="UTF-8">
+  <title>Zahraa Fashion Finds Global</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
   <style>
-   body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #fafafa;
-  color: #111;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fafafa;
+    }
 
-.site-header {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      border-bottom: 1px solid #eee;
+    }
 
-.site-header-left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex: 1;
-}
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
 
-.site-header nav {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  flex: 1;
-}
+    .left img {
+      height: 80px;
+    }
 
-.site-header a {
-  text-decoration: none;
-  color: grey;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    h1 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: bold;
+    }
 
-.page-title {
-  text-align: center;
-  padding: 40px 20px;
-}
+    nav {
+      display: flex;
+      gap: 20px;
+    }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-  padding: 40px;
-}
+    nav a {
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+    }
 
+    /* MOBILE FIX */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 
-<body> 
-  <header class="site-header">
+<body>
 
-  <div class="brand">
+<header>
+  <div class="left">
     <a href="index.html">
       <img src="ChatGPT Image Jan 29, 2026, 08_31_01 PM.png" alt="Logo">
     </a>
-
     <h1>Zahraa Fashion Finds Global</h1>
   </div>
 
-  <nav class="main-nav">
-    <a href="aesthetics.html">Discover Aesthetics</a>
-    <a href="shop-the-look.html">Shop the Look</a>
+  <nav>
+    <a href="men.html">Men</a>
+    <a href="women.html">Women</a>
   </nav>
-
 </header>
-
-  <body>
-   <header style="
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-">
-  <a href="index.html">
-    <img 
-      src="ChatGPT Image Jan 29, 2026, 08_31_01 PM.png" 
-      alt="Zahraa Fashion Finds Global Logo" 
-      style="height:300px;"
-    >
-  </a>
-
-  <h1 style="
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    margin: 0;
-    font-weight: bold;
-  ">
-    Zahraa Fashion Finds Global
-  </h1>
-</header>
- 
-
-
-
-
-
-
-
- </div>
-
-  <!-- CENTER: NAV -->
-  <nav style="
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    flex: 1;
-  ">
-    <a href="aesthetics.html" style="
-      text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
-      
-      color: grey;
-    ">
-      Discover Aesthetics.
-    </a>
-
-    <a href="shop-the-look.html" style="
-      text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
-      
-      color: grey;
-    ">
-      Shop the Look
-    </a>
-  </nav>
-
-  <!-- RIGHT: EMPTY (for balance) -->
-  <div style="flex: 1;"></div>
-</header>
-
-<section class="grid">
-  <a class="card" href="men.html">
-    <img src="https://i.pinimg.com/736x/a0/52/e4/a052e42f683cfb55dc1ddbe58f5bf689.jpg">
-    <h3>Men</h3>
-  </a>
-
-  <a class="card" href="women.html">
-    <img src="https://i.pinimg.com/1200x/19/5f/96/195f96b0a15351ff01963cf77ec5b434.jpg">
-    <h3>Women</h3>
-  </a>
-</section>
 
 </body>
 </html>
+
 
