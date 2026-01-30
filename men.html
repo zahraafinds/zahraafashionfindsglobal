@@ -1,90 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Men - zahraa_finds_global</title>
+  <title>Men - Zahraa Fashion Finds Global</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
   <style>
-    body 
-    <body>
-   <header style="
-  display: flex;
-  align-items: center;
-  padding: 20px;
-">
-
-  <!-- LEFT: CLICKABLE LOGO + NAME -->
-  <div style="
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex: 1;
-  ">
-    <a href="index.html">
-      <img 
-        src="ChatGPT Image Jan 29, 2026, 08_31_01 PM.png"
-        alt="Zahraa Fashion Finds Global Logo"
-        style="height:150px;"
-      >
-    </a>
-
-    <h1 style="
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 28px;
-      margin: 0;
-      font-weight: bold;
-    ">
-      Zahraa Fashion Finds Global
-    </h1>
-  </div>
-
-  <!-- CENTER: NAV -->
-  <nav style="
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    flex: 1;
-  ">
-    <a href="aesthetics.html" style="
-      text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
-      color: grey;
-    ">
-      Discover Aesthetics
-    </a>
-
-    <a href="shop-the-look.html" style="
-      text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
-      color: grey;
-    ">
-      Shop the Look
-    </a>
-  </nav>
-
-  <!-- RIGHT: EMPTY FOR BALANCE -->
-  <div style="flex: 1;"></div>
-
-</header>
-
-{
+    body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background: #fafafa;
       color: #111;
     }
 
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
+    /* TOP HEADER */
+    .top-header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
     }
 
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+    .logo-group {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex: 1;
+    }
+
+    .logo-group img {
+      height: 150px;
+    }
+
+    .logo-group h1 {
+      font-size: 28px;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex: 1;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: grey;
+      font-weight: 500;
+    }
+
+    /* PAGE HEADER */
+    .page-header {
+      text-align: center;
+      padding: 40px 20px;
     }
 
     .grid {
@@ -126,12 +97,34 @@
 
 <body>
 
-<header>
-  <h1>Men</h1>
-  <p>Choose your aesthetic</p>
+<!-- SITE HEADER -->
+<header class="top-header">
+
+  <div class="logo-group">
+    <a href="index.html">
+      <img src="ChatGPT Image Jan 29, 2026, 08_31_01 PM.png" alt="Logo">
+    </a>
+    <h1>Zahraa Fashion Finds Global</h1>
+  </div>
+
+  <nav>
+    <a href="aesthetics.html">Discover Aesthetics</a>
+    <a href="shop-the-look.html">Shop the Look</a>
+  </nav>
+
+  <div style="flex:1;"></div>
+
 </header>
 
+<!-- PAGE TITLE -->
+<section class="page-header">
+  <h1>Men</h1>
+  <p>Choose your aesthetic</p>
+</section>
+
+<!-- GRID -->
 <section class="grid">
+
   <a class="card" href="men-old-money.html">
     <img src="https://i.pinimg.com/736x/85/78/fa/8578fa990aaa2aa1868dd7aae79bab7d.jpg">
     <h3>Old Money</h3>
@@ -146,7 +139,9 @@
     <img src="https://i.pinimg.com/736x/a4/b1/6a/a4b16a296bf338426ef067a944690372.jpg">
     <h3>Streetwear</h3>
   </a>
+
 </section>
 
 </body>
 </html>
+
